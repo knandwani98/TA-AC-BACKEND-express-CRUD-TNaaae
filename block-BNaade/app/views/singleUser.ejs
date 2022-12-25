@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header flex">
+      <a href="/"> <h1>LOGO</h1> </a>
+      <div class="flex">
+        <a href="/users/<%= user._id %>/edit">
+          <button class="button">Edit</button>
+        </a>
+        <a href="/users">
+          <button class="button">Go Back</button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="flex">
+        <div class="card">
+          <h2><%= user.name %></h2>
+          <p><%= user.email %></p>
+          <p><%= user.age %></p>
+          <p><%= user.gender %></p>
+          <p><%= user.bio %></p>
+          <p><%= user.city %></p>
+          <p><%= user.state %></p>
+          <p><%= user.country %></p>
+          <p><%= user.pincode %></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
