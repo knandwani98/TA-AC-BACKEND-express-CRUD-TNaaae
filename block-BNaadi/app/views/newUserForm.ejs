@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header flex container">
+      <a href="/users">LOGO</a>
+      <div>
+        <a href="/users"><button>Close</button></a>
+      </div>
+    </header>
+    <main>
+      <section class="flex f-center container">
+        <form action="/users" method="POST">
+          <input class="input" type="text" name="name" placeholder="name" />
+          <input class="input" type="email" name="email" placeholder="email" />
+          <input class="input" type="number" name="age" placeholder="age" />
+          <textarea
+            class="input"
+            name="bio"
+            placeholder="bio"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <a href=""><button>Add User</button></a>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
