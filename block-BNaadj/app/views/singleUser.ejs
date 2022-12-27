@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="flex container">
+      <a class="logo" href="/users">LOGO</a>
+
+      <div>
+        <a href="/users/<%= user._id %>/edit"><button>Edit</button></a>
+
+        <a href="/users/<%= user._id %>/delete"><button>Delete</button></a>
+
+        <a href="/users"><button>Close</button></a>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <h1>Account overview</h1>
+        <div class="profile flex f-center">
+          <ul>
+            <div class="flex f-left">
+              <li>Name</li>
+              <li><%= user.name %></li>
+            </div>
+            <hr />
+            <div class="flex f-left">
+              <li>Email</li>
+              <li><%= user.email %></li>
+            </div>
+            <hr />
+            <div class="flex f-left">
+              <li>Age</li>
+              <li><%= user.age %></li>
+            </div>
+            <hr />
+            <div class="flex f-left">
+              <li>Address</li>
+              <li><%= user.address %></li>
+            </div>
+            <hr />
+            <div class="flex f-left">
+              <li>Bio</li>
+              <li><%= user.bio %></li>
+            </div>
+            <hr />
+            <div class="flex f-left">
+              <li>Hobbies</li>
+              <li><%= user.hobbies %></li>
+            </div>
+            <hr />
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
