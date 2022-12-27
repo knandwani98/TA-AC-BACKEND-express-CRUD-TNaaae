@@ -21,7 +21,7 @@ Note:- Use postman to send user data with request for create or update user.
 
 1. CREATE
 
-- POST request on '/users' with user data accoriding to above schema from postman
+- POST request on '/users' with user data according to above schema from postman
 - handle `POST` request inside users router.
 - In route handler for create user
   - grab body data using `req.body`
