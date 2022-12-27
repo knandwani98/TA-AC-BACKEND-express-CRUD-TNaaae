@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="flex container">
+      <a class="logo" href="/users">LOGO</a>
+      <div>
+        <a href="/users"><button>Cancel</button></a>
+      </div>
+    </header>
+    <main>
+      <section class="container flex f-center">
+        <form action="/users/<%= user._id %>" method="POST">
+          <input
+            class="formbox"
+            type="text"
+            name="name"
+            placeholder="name"
+            value="<%= user.name %>"
+          />
+
+          <input
+            class="formbox"
+            type="email"
+            name="email"
+            placeholder="email"
+            value="<%= user.email %>"
+          />
+
+          <input
+            class="formbox"
+            type="number"
+            name="age"
+            placeholder="age"
+            value="<%= user.age %>"
+          />
+
+          <input
+            class="formbox"
+            type="text"
+            name="address"
+            placeholder="address"
+            value="<%= user.address %>"
+          />
+
+          <textarea
+            class="formbox"
+            name="bio"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="bio"
+          >
+<%= user.bio %></textarea
+          >
+
+          <input
+            class="formbox"
+            type="text"
+            name="hobbies"
+            placeholder="hobbies"
+            value="<%= user.hobbies %>"
+          />
+
+          <input class="formbox" type="submit" value="Add User" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
